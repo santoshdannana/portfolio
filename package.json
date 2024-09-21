@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/santoshdannana/portfolio",
+  "homepage": "https://santoshdannana.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
