@@ -1,0 +1,127 @@
+.Main {
+  display: flex;
+  align-items: center; 
+  min-height: 100vh; 
+  padding: 20px;
+}
+
+.container{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+.box1{
+margin-right: 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.box2{
+display: flex;
+flex-direction: column;
+margin-bottom: 50px;
+padding: 30px;
+}
+
+.image img {
+width: 250px; /* Adjust size as needed */
+height: 250px;
+border-radius: 50%; /* Circular image */
+border: 2px solid hsla(294, 100%, 56%, 0.8);
+box-shadow: 0 0 10px hwb(294 12% 0% / 0.8) ; /* Glowing effect */
+border: 1px dotted #9d00ff; /* Dotted border with color */
+}
+
+.image img:hover{
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+    border-radius: 50%; /* Circular image */
+    border: 2px solid #9d00ff;
+    box-shadow: 0 0 20px #9d00ff; /* Glowing effect */
+    
+    }
+
+.icons {
+display: flex;
+gap: 40px; /* Spacing between icons */
+margin-top: 30px;
+color: white;
+
+}
+
+.icons a {
+color: #e6b0f7; /* Default color for icons */
+text-decoration: none; /* Remove underline */
+}
+
+.icons svg {
+    font-size: 35px; /* Adjust size as needed */
+  }
+  
+.icons svg:hover {
+color: #9d00ff; /* Change color on hover */
+cursor:pointer;
+background-color: #000000;
+border-radius: 200%;
+font-size: 40px;
+}
+
+.hi{
+    font-size: 40px;
+    padding-top: 0px;
+    color: #f7e0fe;
+    font-family: 'Fragile', sans-serif;
+    
+    letter-spacing: 1.5px;
+}
+.name {
+font-size: 100px; 
+padding-top: 0px;
+color: #f7e0fe;
+font-family: 'Fragile', sans-serif;
+}
+
+.title{
+    color: #f7e0fe; /* Subtle color for the description */
+    font-family: 'Fragile', sans-serif;
+    margin-top: 30px;
+    font-size: 30px; /* Adjust font size as needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+
+.animated-text{
+    font-size: 2.2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  background: linear-gradient(to right, #f3cbff, #9d00ff); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text for WebKit browsers */
+  background-clip: text; /* Clip the background to the text */
+  color: transparent;
+  letter-spacing: 2px;
+}
+
+
+  .cursor {
+    animation: blink 0.7s infinite; /* Blinking effect */
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+
+
+

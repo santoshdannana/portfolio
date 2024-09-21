@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Fragile';
+  src: url('../src/assets/fonts/Fragile\ Bombers.otf') format('opentype'); 
+}
+
+@font-face {
+  font-family: 'DashHorizon';
+  src: url('../src/assets/fonts/Dashhorizon-eZ5wg.otf') format('opentype'); 
+}
+
+@font-face {
+  font-family: 'zekton';
+  src: url('../src/assets/fonts/zekton\ rg.otf') format('opentype'); 
+}
+
+/* Ensure the page takes the full height */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* A default style to ensure your app fills the full viewport */
+#root, .App {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}

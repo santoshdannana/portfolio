@@ -1,0 +1,86 @@
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  min-height: 100vh;
+  
+}
+
+.Container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  
+}
+
+.MuiAccordion-root {
+  margin-bottom: 10px; 
+  border-radius: 8px; 
+  background: linear-gradient(to right, #f3cbff5e, #a229ee73);
+  
+  
+}
+
+.MuiAccordion-root:hover {
+  background: linear-gradient(to right, #f3cbff5e, #a229ee73);
+}
+
+.MuiTypography-h6:hover{
+  color: white;
+}
+
+
+.MuiAccordionSummary-root {
+  color: #26132c;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: background-color 0.3s ease;
+  border-radius: 8px; /* Keeps the rounded corners */
+   margin-top: 10px;
+}
+
+.MuiAccordionSummary-content {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between avatar and text */
+  
+}
+
+.MuiAccordionDetails-root {
+  padding: 15px 20px;
+  border-radius: 0 0 8px 8px; 
+  color: #e3d5ff;
+  
+}
+
+.MuiAvatar-root {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Container {
+    padding: 20px; /* Adjusts padding for smaller screens */
+  }
+  
+  .MuiAccordionSummary-root {
+    padding: 8px 16px; /* Reduces padding on smaller screens */
+  }
+  
+  .MuiAccordionDetails-root {
+    padding: 10px 16px;
+  }
+
+  .MuiAvatar-root {
+    width: 40px;
+    height: 40px; /* Smaller avatar for mobile */
+  }
+
+  .MuiTypography-h6 {
+    font-size: 1.1rem; /* Smaller font size for mobile */
+  }
+}

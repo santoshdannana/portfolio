@@ -1,0 +1,121 @@
+.projects-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  padding-top: 60px; 
+  box-sizing: border-box;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 40px; 
+  padding: 20px;
+  width: 100%; 
+}
+
+/* Default styling for project card */
+.project-card {
+  background: linear-gradient(to right, #f3cbff5e, #a229ee73);
+  background-size: 200% 100%; /* Set the background size larger for the animation effect */
+  background-position: right center; /* Start the background from the right */
+  color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: background-position 0.6s ease; /* Animate the background position */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Hover effect to change the gradient from right-to-left */
+.project-card:hover {
+  
+  background: linear-gradient(to left, #f3cbff5e, #a229ee73);
+  background-position: left center; /* Move the background to the left on hover */
+  transform: translateY(-10px); 
+}
+
+
+/* Content inside each project card */
+.project-content {
+  padding: 15px; 
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Project Title */
+.project-content h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #e3d5ff;
+}
+
+/* Project Description */
+.project-content p {
+  font-size: 1rem;
+  margin: 0;
+  color: #bbb;
+}
+
+/* Container for the two buttons */
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 10px;
+}
+
+/* Button Styles */
+.btn {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-github {
+  font-size: 25px;
+  color: #fff;
+}
+
+.btn-live {
+  background-color: #6a0dad; /* Live button color */
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .project-thumbnail {
+    height: 120px; /* Smaller height for mobile */
+  }
+
+  .project-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
