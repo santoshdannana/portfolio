@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/santoshdannana/portfolio/static/css/main.3163c396.css",
+    "main.js": "/santoshdannana/portfolio/static/js/main.dd56d0bc.js",
+    "static/js/453.ace21015.chunk.js": "/santoshdannana/portfolio/static/js/453.ace21015.chunk.js",
+    "static/media/ECOM.png": "/santoshdannana/portfolio/static/media/ECOM.30e3f05d9ed6f9b5b655.png",
+    "static/media/image_11.png": "/santoshdannana/portfolio/static/media/image_11.b3aa84dfefe8508cb467.png",
+    "static/media/zekton rg.otf": "/santoshdannana/portfolio/static/media/zekton rg.461f6cef464dd8540f87.otf",
+    "static/media/Dashhorizon-eZ5wg.otf": "/santoshdannana/portfolio/static/media/Dashhorizon-eZ5wg.52149500184acb6b8bc0.otf",
+    "static/media/Fragile Bombers.otf": "/santoshdannana/portfolio/static/media/Fragile Bombers.52a6b5371d4cc66cb481.otf",
+    "static/media/slu-primary-white-rgb.png": "/santoshdannana/portfolio/static/media/slu-primary-white-rgb.ba1e1d0c87a05811f4b8.png",
+    "static/media/NTT.jpg": "/santoshdannana/portfolio/static/media/NTT.5ece52fb46eef1fe1469.jpg",
+    "static/media/cognizant.svg": "/santoshdannana/portfolio/static/media/cognizant.630b8bf6b69a2187564bd56f473c95b6.svg",
+    "index.html": "/santoshdannana/portfolio/index.html",
+    "main.3163c396.css.map": "/santoshdannana/portfolio/static/css/main.3163c396.css.map",
+    "main.dd56d0bc.js.map": "/santoshdannana/portfolio/static/js/main.dd56d0bc.js.map",
+    "453.ace21015.chunk.js.map": "/santoshdannana/portfolio/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3163c396.css",
+    "static/js/main.dd56d0bc.js"
+  ]
+}
