@@ -3,7 +3,6 @@ import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-import InstagramIcon from '@mui/icons-material/Instagram';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {

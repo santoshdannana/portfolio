@@ -10,7 +10,6 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SLU from "../assets/slu-primary-white-rgb.png";
 import COG from "../assets/cognizant.svg";
-import NTT from "../assets/NTT.jpg";
 import './Experience.css';
 
 const experiences = [

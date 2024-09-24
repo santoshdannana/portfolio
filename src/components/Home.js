@@ -3,7 +3,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import "./Home.css";
-import myImage from "../assets/image_11.png";
 
 const texts = ["Frontend Developer.", "Backend Developer.", "Full Stack Developer."];
 
@@ -54,9 +53,6 @@ const Home = () => {
     <div className='container'>
     <div className='Main'>
       <div className='box1'>
-        <div className='image'>
-          <img  src={myImage} alt="My Image" />
-        </div>
         <div className='icons'>
           <a href="https://github.com/santoshdannana" target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large" /></a>
           <a href="https://www.linkedin.com/in/santosh-kumar-4972791a2" target="_blank" rel="noopener noreferrer"><LinkedInIcon fontSize="large" /></a>

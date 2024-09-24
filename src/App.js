@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -10,42 +10,66 @@ import useMobileDetect from './hooks/useMobileDetect'; // Custom hook to detect 
 import './App.css';
 
 function App() {
-  const isMobile = useMobileDetect(); // Detect if user is on mobile
+  const [activeSection, setActiveSection] = useState('home');
+  const isMobile = useMobileDetect();
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const handleScroll = () => {
+    const sections = [
+      { id: 'home', ref: homeRef },
+      { id: 'about', ref: aboutRef },
+      { id: 'experience', ref: experienceRef },
+      { id: 'projects', ref: projectsRef },
+      { id: 'contact', ref: contactRef },
+    ];
+    const scrolledPosition = window.scrollY + window.innerHeight / 2;
+
+    for (let section of sections) {
+      const el = section.ref.current;
+      if (el.offsetTop <= scrolledPosition && el.offsetTop + el.offsetHeight > scrolledPosition) {
+        if (activeSection !== section.id) {
+          setActiveSection(section.id);
+          break;
+        }
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [activeSection]);
 
   return (
     <div>
-      {/* Background that stays constant */}
       <StarryBackground />
-
-      {/* Show a full-screen block message if on mobile */}
       {isMobile ? (
         <div className="mobile-blocker">
           <p>This site is best viewed on a desktop. Please visit from a larger screen.</p>
         </div>
       ) : (
         <>
-          {/* Navbar */}
-          <Navbar />
-
-          {/* Continuous Scrolling Layout */}
+          <Navbar activeSection={activeSection} />
           <div className="scroll-container">
-            <section id="home" className="section">
+            <section id="home" className="section" ref={homeRef}>
               <Home />
             </section>
-
-            <section id="about" className="section">
+            <section id="about" className="section" ref={aboutRef}>
               <About />
             </section>
-
-            <section id="experience" className="section">
+            <section id="experience" className="section" ref={experienceRef}>
               <Experience />
             </section>
-
-            <section id="projects" className="section">
+            <section id="projects" className="section" ref={projectsRef}>
               <Projects />
             </section>
-
-            <section id="contact" className="section">
+            <section id="contact" className="section" ref={contactRef}>
               <Contact />
             </section>
           </div>

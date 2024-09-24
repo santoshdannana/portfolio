@@ -1,6 +1,5 @@
 import React from 'react';
 import './Projects.css';
-import ECOM from '../assets/ECOM.png'; // Import image for a project
 
 // Font Awesome CSS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
