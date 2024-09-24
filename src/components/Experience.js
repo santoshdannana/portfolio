@@ -30,24 +30,10 @@ const experiences = [
   },
   {
     company: 'Cognizant',
-    role: 'Junior Full Stack Developer',
-    period: 'August 2022 to December 2022',
+    role: 'Full Stack Developer',
+    period: 'January 2021 to December 2022',
     logo: COG,
-    description: "As a Junior Full Stack Developer, I worked on developing and maintaining applications using Java, Spring Boot, and React, optimizing both back-end and front-end functionalities.",
-  },
-  {
-    company: 'Cognizant',
-    role: 'Full Stack Developer Intern',
-    period: 'February 2022 to July 2022',
-    logo: COG,
-    description: "As a Full Stack Developer Intern, I contributed to various development tasks using Java, Spring Boot, and React, focusing on both back-end and front-end development.",
-  },
-  {
-    company: 'NTT Data',
-    role: 'Software Development Intern',
-    period: 'February 2021 to December 2021',
-    logo: NTT,
-    description: "As a Software Development Intern, I gained experience in developing full-stack applications, working with Java, Spring Boot, and React, and assisting in both back-end and front-end tasks.",
+    description: "As a Full Stack Developer at Cognizant, I led the development and maintenance of robust web applications, seamlessly integrating front-end and back-end technologies to enhance user experiences. I engineered scalable solutions using Java and Spring Boot, specializing in secure and efficient RESTful APIs that effectively communicate with various microservices. My work included developing dynamic React components that significantly improved user retention and satisfaction. I was instrumental in optimizing database performance, implementing CI/CD pipelines using Jenkins and Docker to reduce downtime, and collaborating with cross-functional teams to meet project deadlines and quality standards. My role also involved participating in architectural and design discussions, advocating for best practices, documenting development processes, and troubleshooting to mitigate critical issues, ensuring high-quality software solutions.",
   },
 ];
 
