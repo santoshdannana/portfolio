@@ -34,7 +34,7 @@ const Home = () => {
         setIndex(index + 1);
         if (index === currentText.length) {
           setIsDeleting(true);
-          setSpeed(100); // Speed of deleting
+          setSpeed(100); 
         }
       }
     };
@@ -46,7 +46,7 @@ const Home = () => {
   useEffect(() => {
     if (textRef.current && cursorRef.current) {
       const textWidth = textRef.current.offsetWidth;
-      cursorRef.current.style.width = `${textWidth}px`; // Ensure cursor width matches text
+      cursorRef.current.style.width = `${textWidth}px`; 
     }
   }, [displayText]);
 
